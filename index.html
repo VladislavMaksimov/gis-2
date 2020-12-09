@@ -69,14 +69,6 @@
 				transparent: true
 			});
 			mymap.addLayer(wmsLayer);
-			
-			wmsLayer= L.tileLayer.wms("http://geoserver-geoserver.e4ff.pro-eu-west-1.openshiftapps.com/geoserver/ows?", {
-				layers: 'gis:settlement',
-				styles: 'point',
-				format: 'image/png',
-				transparent: true
-			});
-			mymap.addLayer(wmsLayer);
 
 			function onMapClick(e) {
 				popup
